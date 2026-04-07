@@ -4,7 +4,7 @@
 This project provides a data-driven deep dive into the customer base of **AeroFit**, a leading fitness equipment brand. Using Exploratory Data Analysis (EDA) in Python, we analyze the profiles of customers who purchased the **KP281**, **KP481**, and **KP781** treadmill models to optimize marketing strategies and product recommendations.
 
 ## 📂 Project Deliverables
-* **[Full Analysis Report (PDF)](EDA Portfolio Project.pdf):** A comprehensive 18-page formal report containing executive summaries, statistical tables, and strategic business recommendations.
+* **[Read the Detailed EDA Report (PDF)](./reports/EDA%20Portfolio%20Project.pdf):** A comprehensive 18-page formal report containing executive summaries, statistical tables, and strategic business recommendations.
 * **[Interactive Analysis (Jupyter Notebook)](./notebooks/Ayesha_EDA_Portfolio_Project.ipynb):** Step-by-step Python code including data cleaning, visualization, and statistical modeling.
 
 ---
