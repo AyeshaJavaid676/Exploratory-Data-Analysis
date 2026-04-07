@@ -1,52 +1,68 @@
-# AeroFit Treadmill Customer Profiling - Exploratory Data Analysis
+# AeroFit Treadmill Customer Profiling: Exploratory Data Analysis
 
 ## 📌 Project Overview
-This project performs an Exploratory Data Analysis (EDA) on AeroFit's customer database to identify market segments and develop customer profiles for different treadmill product lines. The goal is to provide actionable insights for better targeting and recommendation strategies.
+This project provides a data-driven deep dive into the customer base of **AeroFit**, a leading fitness equipment brand. Using Exploratory Data Analysis (EDA) in Python, we analyze the profiles of customers who purchased the **KP281**, **KP481**, and **KP781** treadmill models to optimize marketing strategies and product recommendations.
 
-## 📊 Key Business Insights
-Based on the analysis of customer demographics and purchasing behavior, the following key insights were identified:
-
-### 1. Product Segmentation & Profiles
-* **KP281 (Entry Level):** The most popular model, accounting for **44.4%** of total sales. It appeals to a broad demographic with a balanced gender ratio and moderate income levels.
-* **KP481 (Mid-Level):** Holds **33.3%** of the market share. It is preferred by intermediate runners with moderate fitness levels.
-* **KP781 (Premium):** The "Elite" model (**22.2%** share). It is predominantly purchased by high-income males ($75k+) with a self-rated fitness level of 5.
-
-### 2. Significant Correlations
-* **Income & Product:** There is a high correlation between annual income and the purchase of the KP781 model.
-* **Fitness & Usage:** Customers purchasing the KP781 plan to use the treadmill significantly more often (avg. 5-6 times/week) compared to entry-level buyers.
+## 📂 Project Deliverables
+* **[Full Analysis Report (PDF)](./reports/EDA%20Portfolio%20Project.pdf):** A comprehensive 18-page formal report containing executive summaries, statistical tables, and strategic business recommendations.
+* **[Interactive Analysis (Jupyter Notebook)](./notebooks/Ayesha_EDA_Portfolio_Project.ipynb):** Step-by-step Python code including data cleaning, visualization, and statistical modeling.
 
 ---
 
-## 🖼️ Visualizations
+## 📊 Dataset Insights
+The analysis is based on **180 customer records** with 9 features covering demographics (Age, Gender, Education, Income) and behavioral data (Usage, Fitness levels, Expected Miles).
 
-### Customer Distribution by Product
-![Product Distribution](images/product_distribution.png)
-*Insight: The KP281 is the volume leader, while the KP781 represents the high-margin niche.*
+### 1. Statistical Summary
+* **Average Age:** 28.8 years (Target demographic: 20–30 years).
+* **Education:** Average 15.6 years (Undergraduate level).
+* **Income:** Ranges from **$29,562 to $104,581**, with significant variation in the premium segment.
+* **Usage:** Average frequency of ~3.5 times per week.
 
-### Income vs. Product Purchase
-![Income Boxplot](images/income_analysis.png)
-*Insight: Clear income separation is visible for the KP781 model, indicating a distinct target audience.*
-
-### Correlation Heatmap
-![Heatmap](images/heatmap.png)
-*Insight: Features like 'Miles' and 'Usage' show a very strong positive correlation with 'Fitness' levels.*
+### 2. Product-Specific Profiles
+| Feature | KP281 (Entry) | KP481 (Mid-Level) | KP781 (Premium) |
+| :--- | :--- | :--- | :--- |
+| **Market Share** | 44.4% | 33.3% | 22.2% |
+| **Gender Split** | Equal (50/50) | Slightly more Male | Heavily Male (82.5%) |
+| **Income Level** | Low to Moderate | Moderate | High ($75k+) |
+| **Fitness Level** | Average (3/5) | Average (3/5) | Elite (5/5) |
 
 ---
 
-## 💡 Recommendations
-* **Targeted Marketing:** Position the **KP281** as an entry-level, versatile product for a broad demographic.
-* **Premium Focus:** Target high-fitness individuals and males for the **KP781** through premium positioning.
-* **Gender-Specific Strategies:** Increase KP781’s appeal among female customers by offering tailored fitness programs.
-* **Bundle Offers:** Leverage the fact that **59.44%** of users are partnered by creating household or couple-based discount packages.
+## 📈 Key Findings & Visualizations
+
+### Distribution & Correlations
+* **Right-Skewed Trends:** Age and Income show right-skewed distributions, highlighting a younger, middle-income majority.
+* **Strongest Bond:** Miles and Fitness show a **0.79 correlation**, proving that higher fitness levels directly correlate to higher usage and distance.
+* **Socio-Economic Link:** Education and Income are moderately linked (**0.63**).
+
+![Correlation Heatmap](images/heatmap.png)
+*Note: Please refer to the `images/` folder for high-resolution distribution plots and heatmaps.*
+
+### Probability Analysis
+* **Premium Segment:** A customer with a fitness level of 5 has a **93.55% probability** of choosing the KP781.
+* **Wealth Factor:** High-income customers have a **72% probability** of purchasing the KP781.
+* **Marital Influence:** **59.44%** of all customers are partnered, representing a significant market for household-focused marketing.
+
+---
+
+## 💡 Strategic Recommendations
+1.  **Targeted Marketing:** Market the **KP281** as a versatile entry-level tool and the **KP781** as an "Elite" performance machine.
+2.  **Gender-Specific Growth:** Implement campaigns to increase KP781 appeal among female customers (currently only 17.5% of premium sales).
+3.  **Household Incentives:** Develop "Partner" or "Family" discount packages to leverage the high percentage of partnered users.
+4.  **Advanced Segmentation:** Treat the 19 income outliers as a "High-Value" cluster for exclusive premium services.
+
+---
 
 ## 🛠️ Tech Stack
-- **Language:** Python
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn
+* **Language:** Python
+* **Libraries:** Pandas, NumPy, Matplotlib, Seaborn
+* **Techniques:** Bivariate Analysis, Outlier Detection, Conditional Probability, Heatmaps.
 
-## 📂 Repository Structure
-```text
-├── images/               # Visualization exports (PNG/JPG)
-├── notebooks/            # Ayesha_EDA_Portfolio_Project.ipynb
-├── reports/              # EDA Portfolio Project.pdf
-├── README.md             # Project Documentation
-└── requirements.txt      # Project Dependencies
+## 🏁 Conclusion
+While this README summarizes the key findings, the **complete technical and business analysis**—including detailed outlier treatment and conditional probability matrices—is available in the formal report.
+
+👉 **[Read the Detailed EDA Report (PDF)](./reports/EDA%20Portfolio%20Project.pdf)**
+
+---
+**Author:** Ayesha Javaid  
+**Project Date:** December 2024
