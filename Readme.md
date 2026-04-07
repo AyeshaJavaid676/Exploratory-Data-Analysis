@@ -35,8 +35,8 @@ The analysis is based on **180 customer records** with 9 features covering demog
 * **Strongest Bond:** Miles and Fitness show a **0.79 correlation**, proving that higher fitness levels directly correlate to higher usage and distance.
 * **Socio-Economic Link:** Education and Income are moderately linked (**0.63**).
 
-![Correlation Heatmap](heatmap.png)
-*Note: Please refer to the `images/` folder for high-resolution distribution plots and heatmaps.*
+![Correlation Heatmap](Heatmap.PNG)
+
 
 ### Probability Analysis
 * **Premium Segment:** A customer with a fitness level of 5 has a **93.55% probability** of choosing the KP781.
