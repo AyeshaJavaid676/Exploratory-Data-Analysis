@@ -58,10 +58,6 @@ The analysis is based on **180 customer records** with 9 features covering demog
 * **Libraries:** Pandas, NumPy, Matplotlib, Seaborn
 * **Techniques:** Bivariate Analysis, Outlier Detection, Conditional Probability, Heatmaps.
 
-## 🏁 Conclusion
-While this README summarizes the key findings, the **complete technical and business analysis**—including detailed outlier treatment and conditional probability matrices—is available in the formal report.
-
-👉 **[Read the Detailed EDA Report (PDF)](./reports/EDA%20Portfolio%20Project.pdf)**
 
 ---
 **Author:** Ayesha Javaid  
