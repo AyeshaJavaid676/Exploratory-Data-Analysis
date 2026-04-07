@@ -5,7 +5,7 @@ This project provides a data-driven deep dive into the customer base of **AeroFi
 
 ## 📂 Project Deliverables
 * **[Read the Detailed EDA Report (PDF)](./reports/EDA%20Portfolio%20Project.pdf):** A comprehensive 18-page formal report containing executive summaries, statistical tables, and strategic business recommendations.
-* **[Interactive Analysis (Jupyter Notebook)](./notebooks/Ayesha_EDA_Portfolio_Project.ipynb):** Step-by-step Python code including data cleaning, visualization, and statistical modeling.
+* **[Interactive Analysis (Jupyter Notebook)](notebook/Ayesha_EDA_Portfolio_Project.ipynb):** Step-by-step Python code including data cleaning, visualization, and statistical modeling.
 
 ---
 
@@ -35,7 +35,7 @@ The analysis is based on **180 customer records** with 9 features covering demog
 * **Strongest Bond:** Miles and Fitness show a **0.79 correlation**, proving that higher fitness levels directly correlate to higher usage and distance.
 * **Socio-Economic Link:** Education and Income are moderately linked (**0.63**).
 
-![Correlation Heatmap](images/heatmap.png)
+![Correlation Heatmap](heatmap.png)
 *Note: Please refer to the `images/` folder for high-resolution distribution plots and heatmaps.*
 
 ### Probability Analysis
